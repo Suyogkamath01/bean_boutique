@@ -1,0 +1,140 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream);
+    color: var(--coffee-brown);
+    line-height: 1.6;
+  }
+  .main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: var(--coffee-brown);
+  }
+  
+  .career-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .career-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .career-intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .job-card {
+    background-color: var(--cream);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-content {
+    padding: 1.5rem;
+  }
+  
+  .job-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--coffee-brown);
+  }
+  
+  .job-description {
+    margin-bottom: 1rem;
+  }
+  
+  .job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .job-location, .job-type {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .apply-btn {
+    background-color: var(--coffee-brown);
+    color: var(--cream);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background-color: var(--deep-red);
+  }
+  
+  .benefits {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .benefit-item {
+    background-color: var(--cream);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-icon {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .job-listings {
+      grid-template-columns: 1fr;
+    }
+  
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }  

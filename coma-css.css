@@ -1,0 +1,136 @@
+:root {
+    --coffee-brown: #3a1c1a;
+    --cream: #fff5e6;
+    --gold: #ffd700;
+    --deep-red: #c41e3a;
+    --accent-green: #2ecc71;
+    --bright-orange: #c1998f;
+  }
+.navbar {
+    background-color: var(--coffee-brown);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: rotate(5deg) scale(1.1);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+    color: var(--gold);
+    transform: translateY(-3px);
+  }
+  
+  .logo-container {
+    text-align: left;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .footer {
+    background-color: var(--coffee-brown);
+    color: var(--cream);
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-section h3 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: var(--gold);
+  }
+  
+  .footer-section:nth-child(2) {
+    margin-left: 2rem; /* Adjust this value to move it more or less to the right */
+  }
+  
+  .social-links {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: var(--cream);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .social-links a:hover {
+    color: var(--gold);
+    transform: translateY(-5px) rotate(15deg);
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }

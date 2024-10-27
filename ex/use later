@@ -1,0 +1,204 @@
+ <div class="menu-item" data-category="coffee">
+      <img src="Classic Cappuccino.jpg" alt="A perfectly balanced cappuccino" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Classic Cappuccino</h3>
+        <p>Equal parts espresso, steamed milk, and milk foam</p>
+        <span class="price">$4.00</span>
+        <button class="add-to-cart" onclick="toggleQuantitySelector(this)">Add to Cart</button>
+                <div class="quantity-selector">
+                    <button onclick="changeQuantity(this, -1)">-</button>
+                    <span>1</span>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                </div>
+      </div>
+    </div>
+    <div class="menu-item" data-category="coffee">
+      <img src="cold" alt="A refreshing glass of cold brew coffee" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Smooth Cold Brew</h3>
+        <p>Steeped for 24 hours, served over ice</p>
+        <span class="price">$4.75</span>
+        <button class="add-to-cart" onclick="toggleQuantitySelector(this)">Add to Cart</button>
+                <div class="quantity-selector">
+                    <button onclick="changeQuantity(this, -1)">-</button>
+                    <span>1</span>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                </div>
+      </div>
+    </div>
+    <div class="menu-item" data-category="coffee">
+      <img src="Heavenly Mocha.jpg" alt="A decadent mocha with whipped cream" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Heavenly Mocha</h3>
+        <p>Espresso with rich chocolate and steamed milk</p>
+        <span class="price">$5.00</span>
+      </div>
+    </div>
+    
+    <!-- Dessert Items -->
+    <div class="menu-item" data-category="dessert">
+      <img src="Classic Tiramisu.jpg" alt="A slice of rich, coffee-flavored tiramisu" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Classic Tiramisu</h3>
+        <p>Layers of coffee-soaked ladyfingers and mascarpone cream</p>
+        <span class="price">$6.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="dessert">
+      <img src="New York Cheesecake.jpg" alt="A slice of creamy New York style cheesecake" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>New York Cheesecake</h3>
+        <p>Rich and creamy with a graham cracker crust</p>
+        <span class="price">$5.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="dessert">
+      <img src="Double Chocolate Cake.jpg" alt="A decadent slice of chocolate cake" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Double Chocolate Cake</h3>
+        <p>Moist chocolate cake with rich chocolate frosting</p>
+        <span class="price">$6.00</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="dessert">
+      <img src="Homestyle Apple Pie.jpg" alt="A warm slice of apple pie with vanilla ice cream" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Homestyle Apple Pie</h3>
+        <p>Warm cinnamon-spiced apples in a flaky crust</p>
+        <span class="price">$5.75</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="dessert">
+      <img src="Classic Crème Brûlée.jpg" alt="A perfectly caramelized crème brûlée" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Classic Crème Brûlée</h3>
+        <p>Silky vanilla custard with a caramelized sugar top</p>
+        <span class="price">$7.00</span>
+      </div>
+    </div>
+    
+    <!-- Cookie Items -->
+    <div class="menu-item" data-category="cookies">
+      <img src="Chocolate Chip Cookies.jpg" alt="A stack of gooey chocolate chip cookies" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Chocolate Chip Cookies</h3>
+        <p>Soft, chewy, and loaded with chocolate chips</p>
+        <span class="price">$2.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="cookies">
+      <img src="Oatmeal Raisin Cookies.jpg" alt="A plate of hearty oatmeal raisin cookies" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Oatmeal Raisin Cookies</h3>
+        <p>Wholesome oats and sweet raisins in every bite</p>
+        <span class="price">$2.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="cookies">
+      <img src="Peanut Butter Cookies.jpg" alt="A plate of classic peanut butter cookies" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Peanut Butter Cookies</h3>
+        <p>Rich, creamy peanut butter in every bite</p>
+        <span class="price">$2.75</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="cookies">
+      <img src="Snickerdoodle Cookies.jpg" alt="A plate of cinnamon-sugar coated snickerdoodle cookies" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Snickerdoodle Cookies</h3>
+        <p>Soft and chewy with a cinnamon-sugar coating</p>
+        <span class="price">$2.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="cookies">
+      <img src="White Chocolate Macadamia.jpg" alt="A plate of white chocolate macadamia nut cookies" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>White Chocolate Macadamia</h3>
+        <p>Creamy white chocolate chips and crunchy macadamia nuts</p>
+        <span class="price">$3.00</span>
+      </div>
+    </div>
+    
+    <!-- Fries Items -->
+    <div class="menu-item" data-category="fries">
+      <img src="Classic French Fries.jpg" alt="A basket of crispy golden french fries" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Classic French Fries</h3>
+        <p>Crispy on the outside, fluffy on the inside</p>
+        <span class="price">$3.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="fries">
+      <img src="Sweet Potato Fries.jpg" alt="A serving of crispy sweet potato fries" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Sweet Potato Fries</h3>
+        <p>A healthier twist on a classic favorite</p>
+        <span class="price">$4.00</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="fries">
+      <img src="Truffle Parmesan Fries.jpg" alt="A serving of truffle-infused french fries" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Truffle Parmesan Fries</h3>
+        <p>Tossed with truffle oil and grated Parmesan</p>
+        <span class="price">$5.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="fries">
+      <img src="Loaded Fries Supreme.jpg" alt="A plate of loaded fries with various toppings" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Loaded Fries Supreme</h3>
+        <p>Topped with cheese, bacon, sour cream, and chives</p>
+        <span class="price">$6.00</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="fries">
+      <img src="Spicy Cajun Fries.jpg" alt="A serving of spicy Cajun-seasoned fries" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Spicy Cajun Fries</h3>
+        <p>Seasoned with a zesty Cajun spice blend</p>
+        <span class="price">$4.50</span>
+      </div>
+    </div>
+    
+    <!-- Sandwich Items -->
+    <div class="menu-item" data-category="sandwiches">
+      <img src="Classic Club Sandwich.jpg" alt="A triple-decker club sandwich with turkey, bacon, and fresh vegetables" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Classic Club Sandwich</h3>
+        <p>Triple-decker with turkey, bacon, lettuce, and tomato</p>
+        <span class="price">$8.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="sandwiches">
+      <img src="Garden Veggie Sandwich.jpg" alt="A colorful vegetarian sandwich packed with fresh vegetables" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Garden Veggie Sandwich</h3>
+        <p>Packed with fresh vegetables and hummus spread</p>
+        <span class="price">$7.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="sandwiches">
+      <img src="Gourmet Grilled Cheese.jpg" alt="A golden-brown grilled cheese sandwich" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Gourmet Grilled Cheese</h3>
+        <p>Blend of premium cheeses on artisanal bread</p>
+        <span class="price">$6.50</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="sandwiches">
+      <img src="Chicken Avocado Delight.jpg" alt="A chicken and avocado sandwich on whole grain bread" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Chicken Avocado Delight</h3>
+        <p>Grilled chicken breast with fresh avocado and aioli</p>
+        <span class="price">$9.00</span>
+      </div>
+    </div>
+    <div class="menu-item" data-category="sandwiches">
+      <img src="Ultimate BLT.jpg" alt="A classic BLT sandwich" width="300" height="200">
+      <div class="menu-item-content">
+        <h3>Ultimate BLT</h3>
+        <p>Crispy bacon, lettuce, and tomato on toasted bread</p>
+        <span class="price">$7.00</span>
+      </div>
+    </div>
